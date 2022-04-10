@@ -1,0 +1,16 @@
+ {% extends 'Family/base.html' %}
+
+ {% block main %}
+ 
+ <form method ="get">
+    <input type="text" name="member_name" >
+    <input type="submit" value="Search">
+
+
+ </form>
+ {% if member_found %}
+   <p> {{ member_found }} </P>
+ 
+ {% endif  %}
+
+ {% endblock main %}
